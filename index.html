@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>React Hello World</title>
+  <script src="js/react-15.02.js"></script>
+  <script src="js/react-dom-15.02.js"></script>
 </head>
 <body>
-    <h1>Salom Dunyo Dasturchilari i like you </h1>
+    <div id="content"></div>
+    <script>
+        var h1 = React.createElement("h1", null, "Hello World");
+        ReactDOM.render(h1, document.getElementById("content"));
+    </script>
 </body>
 </html>
